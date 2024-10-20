@@ -1,0 +1,75 @@
+.product-detail {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px; /* Espaçamento interno */
+  background-color: #ffffff; /* Cor de fundo clara para destaque */
+  border-radius: 15px; /* Bordas arredondadas mais suaves */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais intensa para profundidade */
+  transition: transform 0.2s ease, box-shadow 0.3s ease; /* Transição suave */
+  margin: 20px; /* Espaçamento externo */
+  border: 1px solid #e0e0e0; /* Borda sutil para definição */
+}
+
+.product-detail:hover {
+  transform: translateY(-5px); /* Eleva a seção ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.product-detail img {
+  width: 100%; /* Ajusta a largura para 100% do contêiner */
+  max-width: 400px; /* Limita a largura máxima da imagem */
+  height: auto;
+  border-radius: 15px; /* Bordas arredondadas da imagem */
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
+  object-fit: cover; /* Ajusta a imagem para caber no contêiner */
+  transition: transform 0.2s ease; /* Transição para a imagem */
+}
+
+.product-detail img:hover {
+  transform: scale(1.05); /* Efeito de zoom na imagem ao passar o mouse */
+}
+
+.product-detail h2 {
+  font-size: 30px; /* Tamanho maior para o título */
+  color: #333; /* Cor do texto do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-weight: bold; /* Título em negrito */
+}
+
+.product-detail p {
+  font-size: 18px; /* Tamanho do texto da descrição */
+  color: #666; /* Cor do texto da descrição */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  margin: 0 20px; /* Margens laterais para melhorar a legibilidade */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-detail {
+      font-size: 20px; /* Tamanho de fonte menor em telas pequenas */
+      padding: 15px; /* Menos espaçamento em telas menores */
+  }
+
+  .product-detail h2 {
+      font-size: 26px; /* Tamanho do título em telas pequenas */
+  }
+
+  .product-detail p {
+      font-size: 16px; /* Tamanho da descrição em telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail {
+      font-size: 18px; 
+      padding: 10px; 
+  }
+
+  .product-detail h2 {
+      font-size: 22px; 
+  }
+
+  .product-detail p {
+      font-size: 14px; 
+  }
+}
